@@ -37,6 +37,7 @@
     "index.js",
     "index.d.ts"
   ],
+  "typings": "index.d.ts",
   "author": "TZ <atian25@qq.com>",
   "license": "MIT"
 }

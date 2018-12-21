@@ -35,3 +35,5 @@ export function ok(file: string, pattern?: ExpectedType | ExpectedType[]): this;
  * ```
  */
 export function fail(file: string, pattern?: ExpectedType | ExpectedType[]): this;
+
+export default ok;

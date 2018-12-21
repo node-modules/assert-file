@@ -18,7 +18,7 @@ type ExpectedType = string | RegExp;
  *   assertFile(`${fixtures}/README.md`, [ 'hello', /world/ ]); // support multiple rule
  * ```
  */
-export function ok(file: string, pattern?: ExpectedType | ExpectedType[]): this;
+export function ok(file: string, pattern?: ExpectedType | ExpectedType[]): void;
 
 /**
  * The opposite assertion of assert file
@@ -34,6 +34,6 @@ export function ok(file: string, pattern?: ExpectedType | ExpectedType[]): this;
  *   assertFile.fail(`${fixtures}/README`, [ 'abc', /\d+/ ]);
  * ```
  */
-export function fail(file: string, pattern?: ExpectedType | ExpectedType[]): this;
+export function fail(file: string, pattern?: ExpectedType | ExpectedType[]): void;
 
 export default ok;

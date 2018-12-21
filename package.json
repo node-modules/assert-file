@@ -28,7 +28,7 @@
     "pkgfiles": "egg-bin pkgfiles"
   },
   "ci": {
-    "version": "8, 10"
+    "version": "8, 10, 11"
   },
   "eslintIgnore": [ "coverage", "dist" ],
   "homepage": "https://github.com/node-modules/assert-file",

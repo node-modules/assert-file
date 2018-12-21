@@ -1,0 +1,43 @@
+{
+  "name": "assert-file",
+  "version": "1.0.0",
+  "description": "assert file utilities",
+  "dependencies": {
+    "is-type-of": "^1.2.1",
+    "lodash.ismatch": "^4.4.0"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "egg-bin": "^4.9.0",
+    "egg-ci": "^1.11.0",
+    "eslint": "^5.10.0",
+    "eslint-config-egg": "^7.1.0",
+    "mz-modules": "^2.1.0",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "autod": "autod",
+    "lint": "eslint .",
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "ci": "npm run lint && egg-bin pkgfiles --check && npm run cov",
+    "pkgfiles": "egg-bin pkgfiles"
+  },
+  "ci": {
+    "version": "8, 10, 11"
+  },
+  "eslintIgnore": [ "coverage", "dist" ],
+  "homepage": "https://github.com/node-modules/assert-file",
+  "repository": "git@github.com:node-modules/assert-file.git",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "typings": "index.d.ts",
+  "author": "TZ <atian25@qq.com>",
+  "license": "MIT"
+}
